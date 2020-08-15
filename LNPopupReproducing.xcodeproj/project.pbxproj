@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,25 @@
 		2F02073324E73AB400206E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F02073124E73AB400206E9D /* Main.storyboard */; };
 		2F02073524E73ABD00206E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F02073424E73ABD00206E9D /* Assets.xcassets */; };
 		2F02073824E73ABD00206E9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F02073624E73ABD00206E9D /* LaunchScreen.storyboard */; };
+		2F02074024E73BB500206E9D /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F02073F24E73BB500206E9D /* Player.storyboard */; };
+		2F02074224E73BD100206E9D /* NowPlayingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F02074124E73BD100206E9D /* NowPlayingVC.swift */; };
+		2F02075224E7C7AA00206E9D /* LNPopupController in Frameworks */ = {isa = PBXBuildFile; productRef = 2F02075124E7C7AA00206E9D /* LNPopupController */; };
+		2F02075324E7C7AA00206E9D /* LNPopupController in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2F02075124E7C7AA00206E9D /* LNPopupController */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2F02074924E73C3400206E9D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2F02075324E7C7AA00206E9D /* LNPopupController in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2F02072624E73AB400206E9D /* LNPopupReproducing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LNPopupReproducing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +44,8 @@
 		2F02073424E73ABD00206E9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F02073724E73ABD00206E9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F02073924E73ABD00206E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F02073F24E73BB500206E9D /* Player.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		2F02074124E73BD100206E9D /* NowPlayingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NowPlayingVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F02075224E7C7AA00206E9D /* LNPopupController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +79,8 @@
 		2F02072824E73AB400206E9D /* LNPopupReproducing */ = {
 			isa = PBXGroup;
 			children = (
+				2F02074124E73BD100206E9D /* NowPlayingVC.swift */,
+				2F02073F24E73BB500206E9D /* Player.storyboard */,
 				2F02072924E73AB400206E9D /* AppDelegate.swift */,
 				2F02072B24E73AB400206E9D /* SceneDelegate.swift */,
 				2F02072D24E73AB400206E9D /* FirstViewController.swift */,
@@ -80,12 +103,16 @@
 				2F02072224E73AB400206E9D /* Sources */,
 				2F02072324E73AB400206E9D /* Frameworks */,
 				2F02072424E73AB400206E9D /* Resources */,
+				2F02074924E73C3400206E9D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LNPopupReproducing;
+			packageProductDependencies = (
+				2F02075124E7C7AA00206E9D /* LNPopupController */,
+			);
 			productName = LNPopupReproducing;
 			productReference = 2F02072624E73AB400206E9D /* LNPopupReproducing.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 2F02071D24E73AB400206E9D;
+			packageReferences = (
+				2F02075024E7C7AA00206E9D /* XCRemoteSwiftPackageReference "LNPopupController" */,
+			);
 			productRefGroup = 2F02072724E73AB400206E9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F02073824E73ABD00206E9D /* LaunchScreen.storyboard in Resources */,
+				2F02074024E73BB500206E9D /* Player.storyboard in Resources */,
 				2F02073524E73ABD00206E9D /* Assets.xcassets in Resources */,
 				2F02073324E73AB400206E9D /* Main.storyboard in Resources */,
 			);
@@ -144,6 +175,7 @@
 				2F02073024E73AB400206E9D /* SecondViewController.swift in Sources */,
 				2F02072E24E73AB400206E9D /* FirstViewController.swift in Sources */,
 				2F02072A24E73AB400206E9D /* AppDelegate.swift in Sources */,
+				2F02074224E73BD100206E9D /* NowPlayingVC.swift in Sources */,
 				2F02072C24E73AB400206E9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F02075024E7C7AA00206E9D /* XCRemoteSwiftPackageReference "LNPopupController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LeoNatan/LNPopupController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F02075124E7C7AA00206E9D /* LNPopupController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F02075024E7C7AA00206E9D /* XCRemoteSwiftPackageReference "LNPopupController" */;
+			productName = LNPopupController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F02071E24E73AB400206E9D /* Project object */;
 }
